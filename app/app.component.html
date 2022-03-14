@@ -1,28 +1,38 @@
-<ngx-charts-bar-vertical
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="single"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  (select)="onSelect($event)">
-</ngx-charts-bar-vertical>
-<ngx-charts-bar-vertical
-  [view]="view"
-  [scheme]="colorScheme"
-  [results]="single"
-  [gradient]="gradient"
-  [xAxis]="showXAxis"
-  [yAxis]="showYAxis"
-  [legend]="showLegend"
-  [showXAxisLabel]="showXAxisLabel"
-  [showYAxisLabel]="showYAxisLabel"
-  [xAxisLabel]="xAxisLabel"
-  [yAxisLabel]="yAxisLabel"
-  (select)="onSelect($event)">
-</ngx-charts-bar-vertical>
+<div class="w3-card" style="height:  70vh">
+  <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="single"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [legendTitle]="legendTitle"
+    [yAxis]="showYAxis"
+    [legendPosition]="legendPosition"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+  >
+  </ngx-charts-bar-vertical>
+</div>
+
+<div class="w3-card">
+  <p>w3-card</p>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col w3-yellow m4 l3">
+    <p>
+      12 columns on a small screen, 4 on a medium screen, and 3 on a large
+      screen.
+    </p>
+  </div>
+  <div class="w3-col w3-hover-shadow w3-blue m8 l3 ">
+    <p>
+      12 columns on a small screen, 8 on a medium screen, and 9 on a large
+      screen.
+    </p>
+  </div>
+</div>
