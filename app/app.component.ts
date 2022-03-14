@@ -1,4 +1,5 @@
 import { Component, NgModule } from '@angular/core';
+import { Input } from '@angular/core/src/metadata/directives';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { single } from './data';
@@ -8,11 +9,12 @@ import { single } from './data';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
+@Input('matMenuTriggerFor')
+
 export class AppComponent {
   single: any[];
   multi: any[];
-
-  view: any[] = [700, 400];
 
   // options
   showXAxis = true;
